@@ -8,7 +8,7 @@ const getEnvLangConfig = () => {
 
   const langArray = process.env.TARGET_LANGS
     ? process.env.TARGET_LANGS.split(",")
-    : ["mandarin", "ru", "ko", "pl", "uk"];
+    : ["mandarin", "ru", "ko", "pl", "uk", "ja"];
 
   const locales = Array.from(new Set([defaultLocale, ...langArray]));
 
@@ -139,7 +139,6 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: getEnvLangConfig(),
-
   presets: [
     [
       'classic',
@@ -377,33 +376,48 @@ const config = {
             label: 'Nodes',
             items: [
               {
-                to: 'participate/nodes/node-types',
+                to: '/participate/run-nodes/mytonctrl',
+                label: 'MyTonCtrl',
+              },
+              {
+                to: '/participate/nodes/node-types',
                 label: 'Node Types',
               },
               {
-                to: 'https://ton.org/validator',
-                label: 'Become a Validator',
+                to: '/participate/run-nodes/full-node',
+                label: 'Full Node',
               },
               {
-                to: 'participate/run-nodes/full-node',
-                label: 'Run a Full Node',
+                to: '/participate/run-nodes/enable-liteserver-node',
+                label: 'Liteserver Node',
               },
               {
-                to: 'https://docs.ton.org/participate/run-nodes/full-node#enable-liteserver-mode',
-                label: 'Enable Liteserver',
+                to: '/participate/run-nodes/become-validator',
+                label: 'Validator Node',
               },
               {
-                to: 'participate/run-nodes/archive-node',
-                label: 'Run an Archive Node',
+                to: '/participate/run-nodes/archive-node',
+                label: 'Archive Node',
+              },
+              {
+                to: '/participate/run-nodes/nodes-troubleshooting',
+                label: 'Troubleshooting the Node',
               },
               {
                 to: '/participate/network-maintenance/single-nominator',
                 label: 'Single Nominator Pool',
               },
-
+              {
+                to: '/participate/network-maintenance/nominator-pool',
+                label: 'Nominator Pool',
+              },
               {
                 to: '/participate/network-maintenance/vesting-contract',
                 label: 'Vesting Contract',
+              },
+              {
+                to: '/participate/run-nodes/faq',
+                label: 'FAQ',
               },
             ],
           },
@@ -469,9 +483,19 @@ const config = {
             'aria-label': 'GitHub repository',
           },
           {
-          type: 'localeDropdown',
-          position: 'right',
-        },
+            type: 'localeDropdown',
+            position: 'right',
+            dropdownItemsAfter: [
+              {
+                type: 'html',
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+              {
+                href: "/contribute/localization-program/overview",
+                label: 'Help Us Translate',
+              },
+            ],
+          },
         ],
       },
       footer: {
