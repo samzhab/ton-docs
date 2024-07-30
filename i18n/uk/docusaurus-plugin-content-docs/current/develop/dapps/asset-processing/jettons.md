@@ -1,6 +1,6 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import Button from '@site/src/components/utton';
+import Button from '@site/src/components/button';
 
 # Переробка TON Jetton
 
