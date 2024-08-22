@@ -207,6 +207,7 @@ const sidebars = {
               type: 'category',
               label: 'Message Management',
               items: [
+                'develop/smart-contracts/guidelines/ecosystem-messages-layout',
                 'develop/smart-contracts/guidelines/message-delivery-guarantees',
                 'develop/smart-contracts/messages',
                 'develop/smart-contracts/guidelines/internal-messages',
@@ -400,16 +401,6 @@ const sidebars = {
               id: 'develop/dapps/ton-connect/web',
               label: 'HTML/JS Apps',
             },
-            {
-              type: 'doc',
-              id: 'develop/dapps/ton-connect/tg-bot-integration',
-              label: 'Telegram Bots JS',
-            },
-            {
-              type: 'doc',
-              id: 'develop/dapps/ton-connect/tg-bot-integration-py',
-              label: 'Telegram Bots Python',
-            },
           ],
         },
         {
@@ -580,6 +571,7 @@ const sidebars = {
             'develop/data-formats/transaction-layout',
             'develop/data-formats/crc32',
             'develop/data-formats/tlb-ide',
+            'develop/data-formats/tlb-tools',
           ],
         },
         'develop/data-formats/tl',
@@ -619,6 +611,8 @@ const sidebars = {
       items: [
         'develop/archive/pow-givers',
         'develop/archive/mining',
+        'develop/archive/tg-bot-integration',
+        'develop/archive/tg-bot-integration-py',
         'develop/smart-contracts/compile/README',
         'develop/smart-contracts/environment/installation',
       ],
@@ -722,10 +716,10 @@ const sidebars = {
       'type': 'category',
       'label': 'TON Proxy & Sites',
       'items': [
+        'develop/dapps/tutorials/how-to-run-ton-site',
+        'participate/web3/app-sites',
         'participate/web3/setting-proxy',
         'participate/web3/how-to-open-any-ton-site',
-        'participate/web3/sites-and-proxy',
-        'develop/dapps/tutorials/how-to-run-ton-site',
         'participate/web3/site-management',
       ],
     },
