@@ -1,6 +1,6 @@
 # እንዴት አስተዋፅዖ ማረግ ይቻላል
 
-## Identify area for contribution
+## አስተዋፅዖ የሚደረግበትን መስክ መለየት
 
 There are several ways to identify the area where you can contribute to TON Docs:
 
