@@ -1,4 +1,4 @@
-# How to Contribute
+# እንዴት አስተዋፅዖ ማረግ ይቻላል
 
 ## Identify area for contribution
 
